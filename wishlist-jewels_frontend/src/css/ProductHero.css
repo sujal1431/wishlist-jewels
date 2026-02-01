@@ -1,0 +1,8 @@
+
+.bg-image {
+  background-image: url('/images/3637811c-68f7-40c6-8929-5b900c2a623b.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Full screen height */
+}
