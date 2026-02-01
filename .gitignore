@@ -1,0 +1,32 @@
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Frontend
+node_modules/
+dist/
+.env.local
+.env
+npm-debug.log
+yarn-error.log
+
+# Backend
+target/
+*.jar
+*.class
+*.log
+*.properties
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Images (optional - remove if you want to track all images)
+*.jpg
+*.jpeg
+*.png
+*.gif

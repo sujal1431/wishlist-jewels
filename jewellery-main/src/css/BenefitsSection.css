@@ -1,0 +1,87 @@
+.benefits-section {
+  background: #fff;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  color: #4a2c2a;
+}
+
+.benefits-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.benefits-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #8b1e1e;
+}
+
+.benefits-title span {
+  color: #b84c4c;
+}
+
+.benefits-intro {
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.popular-searches {
+  margin-top: 25px;
+}
+
+.popular-searches h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.search-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.search-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #f8f1f1;
+  border: 1px solid #d3bcbc;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.benefits-list {
+  margin-top: 30px;
+}
+
+.benefits-list h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.benefits-list ul {
+  list-style: disc;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+.benefits-extra {
+  margin-top: 30px;
+}
+
+.benefits-extra h3 {
+  color: #8b1e1e;
+  margin-bottom: 8px;
+}
+
+.store-finder {
+  margin-top: 30px;
+}
+
+.store-links {
+  color: #b84c4c;
+  font-size: 0.95rem;
+}
