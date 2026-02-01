@@ -1,12 +1,12 @@
 import React from "react";
 import ring1 from "../assets/rings/ring1.png";
-import ge from "../assets/earings/goldEarrings.png"
+import ge from "../assets/earings/goldearrings.png"
 import er from "../assets/rings/emeraldring.png"
 import bg from "../assets/bangles/goldbangles.png"
 import rp from "../assets/pendant/ruby.png"
 import se from "../assets/earings/sapphire.png"
 const products = [
-  { id: 1, name: "Diamond Necklace", price: "$499", image: ring },
+  { id: 1, name: "Diamond Necklace", price: "$499", image: ring1 },
   { id: 2, name: "Gold Earrings", price: "$299", image: ge },
   { id: 3, name: "Emerald Ring", price: "$399", image: er },
   { id: 4, name: "Pearl Bracelet", price: "$199", image: bg },
