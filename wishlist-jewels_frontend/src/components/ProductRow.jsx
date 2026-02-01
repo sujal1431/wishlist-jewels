@@ -1,6 +1,5 @@
 import React from "react";
-import ring from "../assets/rings/ring1.png"
-
+import ring1 from "../assets/rings/ring1.png";
 import ge from "../assets/earings/goldEarrings.png"
 import er from "../assets/rings/emeraldring.png"
 import bg from "../assets/bangles/goldbangles.png"
