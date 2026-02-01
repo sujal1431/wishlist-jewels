@@ -1,5 +1,6 @@
 // src/pages/DailyWear.jsx
 import React, { useEffect, useState } from "react";
+import API_BASE_URL from "../config";
 import { useNavigate } from "react-router-dom";
 import { NavbarDemo } from "../components/NavbarDemo";
 import PagesFooter from "../components/Pages-Footer";
@@ -65,7 +66,7 @@ const DailyWear = () => {
 
   // ✅ Fetch Daily Wear products (case-insensitive)
   useEffect(() => {
-    fetch("http://localhost:8080/api/products")
+    fetch(`${API_BASE_URL}/api/products`)
       .then((res) => res.json())
       .then((data) => {
         // filter dailywear category regardless of case or spacing

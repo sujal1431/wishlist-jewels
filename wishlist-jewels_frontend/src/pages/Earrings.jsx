@@ -1,5 +1,6 @@
 // src/pages/Earrings.jsx
 import React, { useEffect, useState } from "react";
+import API_BASE_URL from "../config";
 import { Link } from "react-router-dom";
 import { NavbarDemo } from "../components/NavbarDemo";
 import PagesFooter from "../components/Pages-Footer";
@@ -56,7 +57,7 @@ const Earrings = () => {
 
   // ✅ Fetch earrings category and normalize imageUrls
   useEffect(() => {
-    fetch("http://localhost:8080/api/products/category/earrings")
+    fetch(`${API_BASE_URL}/api/products/category/earrings`)
       .then((res) => res.json())
       .then((data) => {
         const updated = data.map((p) => ({

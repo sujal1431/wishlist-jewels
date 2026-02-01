@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useCart } from "../context/CartContext.jsx";
+import API_BASE_URL from "../config";
 import { NavbarDemo } from "../components/NavbarDemo";
 import PagesFooter from "../components/Pages-Footer";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
-
-const backendUrl = "http://localhost:8080/api";
 
 const CheckoutPage = () => {
   const { cart, clearCart } = useCart();
@@ -63,7 +62,7 @@ const CheckoutPage = () => {
         totalPrice: cart.reduce((acc, item) => acc + item.price * item.quantity, 0),
       };
 
-      const res = await fetch(`${backendUrl}/orders`, {
+      const res = await fetch(`${API_BASE_URL}/api/orders`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderData),

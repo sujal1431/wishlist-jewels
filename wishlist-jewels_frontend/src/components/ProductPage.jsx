@@ -1,11 +1,10 @@
 import React, { useEffect, useState, useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import API_BASE_URL from "../config";
 import { NavbarDemo } from "../components/NavbarDemo";
 import PagesFooter from "../components/Pages-Footer";
 import { CartContext } from "../context/CartContext.jsx";
 import { AuthContext } from "../context/AuthContext";
-
-const backendUrl = "http://localhost:8080/api";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -15,7 +14,7 @@ const ProductPage = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    fetch(`${backendUrl}/products/${id}`)
+    fetch(`${API_BASE_URL}/api/products/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setProduct({

@@ -1,2 +1,4 @@
 // src/config.js
-export const backendUrl = "http://localhost:8080"; // change if needed
+export const backendUrl = "https://wishlist-jewels-backend.up.railway.app";
+const API_BASE_URL = "https://wishlist-jewels-backend.up.railway.app";
+export default API_BASE_URL;

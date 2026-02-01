@@ -1,5 +1,6 @@
 // src/pages/Rings.jsx
 import React, { useEffect, useState } from "react";
+import API_BASE_URL from "../config";
 import { NavbarDemo } from "../components/NavbarDemo";
 import PagesFooter from "../components/Pages-Footer";
 import "@fontsource/playfair-display";
@@ -9,7 +10,6 @@ import BenefitsSection from "../components/BenefitsSection";
 import AssuranceSection from "../components/AssuranceSection";
 import { useNavigate } from "react-router-dom";
 
-const backendUrl = "http://localhost:8080/api";
 const OPTIONS = { loop: true };
 
 // ✅ Product Card with navigation & larger text
@@ -62,7 +62,7 @@ const Rings = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch(`${backendUrl}/products/category/rings`)
+    fetch(`${API_BASE_URL}/api/products/category/rings`)
       .then((res) => res.json())
       .then((data) => {
         const updated = data.map((p) => ({

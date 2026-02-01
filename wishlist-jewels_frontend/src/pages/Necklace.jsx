@@ -1,5 +1,6 @@
 // src/pages/Necklace.jsx
 import React, { useEffect, useState } from "react";
+import API_BASE_URL from "../config";
 import { useNavigate } from "react-router-dom";
 import { NavbarDemo } from "../components/NavbarDemo";
 import PagesFooter from "../components/Pages-Footer";
@@ -67,7 +68,7 @@ const Necklace = () => {
 
   // ✅ Fetch only necklace category from backend
   useEffect(() => {
-    fetch("http://localhost:8080/api/products/category/necklaces")
+    fetch(`${API_BASE_URL}/api/products/category/necklaces`)
       .then((res) => res.json())
       .then((data) => {
         const updated = data.map((p) => ({
